@@ -1,8 +1,19 @@
 import vertexai
 from vertexai.generative_models import GenerativeModel, Tool
 from tools import rag_tool, test_tool, retrieve_relevant_files, run_tests
+import os
 
-vertexai.init(project="tokyo-data-491903-f4", location="us-central1")
+# Initialize Vertex AI with environment variables for security
+GCP_PROJECT_ID = os.environ.get("GCP_PROJECT_ID")
+GCP_LOCATION = os.environ.get("GCP_LOCATION", "us-central1")
+
+if not GCP_PROJECT_ID:
+    raise ValueError(
+        "GCP_PROJECT_ID environment variable must be set. "
+        "See .env.example for configuration details."
+    )
+
+vertexai.init(project=GCP_PROJECT_ID, location=GCP_LOCATION)
 
 agent_tools = Tool(function_declarations=[rag_tool, test_tool])
 
@@ -50,3 +61,4 @@ def approve_and_push(issue_id: str):
         return "PR successfully pushed to GitHub!"
     
     return "Issue not found or not ready for approval."
+    
