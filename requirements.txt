@@ -1,0 +1,5 @@
+google-cloud-aiplatform
+fastapi
+uvicorn
+pytest
+pydantic
