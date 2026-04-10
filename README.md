@@ -381,9 +381,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Andrew Jose**
 
-- GitHub: [@Andrew-jose](https://github.com/Andrew-jose)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- Email: your.email@example.com
+
+- LinkedIn: www.linkedin.com/in/jose-effrein-j-606311345
+- Email: joseeffreinj@gmail.com
 
 ---
 
