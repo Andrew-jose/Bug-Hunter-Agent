@@ -1,4 +1,3 @@
-# Bug-Hunter-Agent
 # Bug Hunter AI Agent
 
 # 🤖 Bug Hunter AI Agent
